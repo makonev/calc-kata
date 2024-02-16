@@ -30,6 +30,7 @@ public class Main {
 
         int x = Integer.parseInt(parts[0]);
         int y = Integer.parseInt(parts[2]);
+        if (x < 1 || x > 10 || y < 1 || y > 10) throw new Exception();
         int result = switch (parts[1]) {
             case "+" -> x + y;
             case "-" -> x - y;
